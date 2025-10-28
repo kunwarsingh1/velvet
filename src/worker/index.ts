@@ -11,7 +11,9 @@ import type {
   MembershipResponse,
   VehicleCode,
 } from '@/shared/types';
-
+interface Env {
+  // Add your environment variables
+}
 const app = new Hono<{ Bindings: Env }>();
 
 // Enable CORS for all routes
